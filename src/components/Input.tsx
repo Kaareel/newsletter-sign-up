@@ -13,7 +13,7 @@ function Input(props: Props) {
       <input 
       type="email" 
       placeholder={props.placeholder} 
-      className={`py-[15px] rounded-[10px] border   ${props.error ? "border-red-500" : "border-current"} `}  onChange={props.onChange} />
+      className={`py-2.5 px-6 rounded-[10px] border   ${props.error ? "border-red-500 bg-red-100" : "border-current"} `}  onChange={props.onChange} />
       
       </div>
   );

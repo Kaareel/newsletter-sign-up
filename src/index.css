@@ -12,12 +12,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-family: robotoCustom, sans-serif;
 }
+p {
+  font-family: robotoCustom, sans-serif;
+}
+li {
+  font-family: robotoCustom, sans-serif;
+}
+form {
+  font-family: robotoCustom, sans-serif;
+}
+
 
 .full-page{
   width: 970px;
-  height: 600px;
+  height: 630px;
+}
+.success-card {
+  max-width: 55rem;
+  padding: 7rem 9rem;
+
+  gap: 5rem;
 }

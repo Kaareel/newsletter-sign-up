@@ -8,9 +8,9 @@ interface Props {
 
 function SuccessPage(props: Props) {
   return (
-    <div className="bg-bgColor h-screen">
-      <div className="flex justify-center ">
-        <div className="bg-white flex flex-col gap-5 max-w-[500px] mt-3 px-[90px] py-[70px] rounded-[2rem]">
+    <div className="bg-bgColor h-screen lg:place-content-center">
+      <div className="lg:flex lg:items-center lg:justify-center ">
+        <div className="bg-white lg:flex lg:flex-col lg:gap-5 lg:max-w-[500px] lg:mt-3 lg:px-[90px] lg:py-[70px] lg:rounded-[2rem] success-card w-full ">
           <img
             src="/icon-success.svg"
             alt="main"
@@ -23,7 +23,7 @@ function SuccessPage(props: Props) {
             segment=". Please open it and click the button inside to confirm your subscription."
           />
           <button
-            className="bg-textColor w-full rounded-[10px] text-white mt-2.5 p-5 bg-gradient-to-r hover:from-pink-500 hover:to-yellow-500"
+            className="bg-textColor w-full text-white mt-2.5 p-5 rounded-[10px] bg-gradient-to-r hover:from-pink-500 hover:to-yellow-500"
             onClick={props.goBack}
           >
             Dismiss message

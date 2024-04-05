@@ -30,16 +30,16 @@ function StartPage(props: Props) {
   };
 
   return (
-    <div className="bg-bgColor h-screen grid place-content-center">
+    <div className="bg-bgColor h-screen lg:grid lg:place-content-center">
       <div className="bg-white grid grid-cols-1 lg:gap-x-4 lg:grid-cols-7 lg:p-8 lg:rounded-[2rem] lg:full-page">
-        <div className="lg:col-span-3 lg:relative lg:w-full lg:order-last">
+        <div className="lg:col-span-3 lg:relative lg:w-full lg:order-last ">
           <Image
-            src="/illustration-sign-up-desktop.svg"
-            srcSet="/illustration-sign-up-desktop.svg 1x, /illustration-sign-up-mobile.svg 2x"
+            src="/illustration-sign-up-mobile.svg"
+            srcSet="/illustration-sign-up-mobile.svg 2x"
           />
         </div>
-        <div className="col-span-4 justify-center px-16">
-          <div className="flex flex-col gap-8 justify-center my-10">
+        <div className="lg:col-span-4 justify-center lg:px-16">
+          <div className="flex flex-col gap-7 justify-center lg:my-10 py-8 px-5">
             <Title
               title="Stay updated!"
               className="text-textColor text-[56px] fond-bond"
@@ -50,9 +50,9 @@ function StartPage(props: Props) {
               <List text="Measuring to ensure updates are a success" />
               <List text="And much more!" />
             </ul>
-            <form onSubmit={handleSubmit} noValidate className="relative">
+            <form onSubmit={handleSubmit} noValidate className="lg:relative">
               {props.error.email && (
-                <p className={`absolute text-red-500 right-0`}>
+                <p className={`absolute text-red-500 font-bold lg:right-0 right-6`}>
                   {props.error.email}
                 </p>
               )}

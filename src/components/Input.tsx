@@ -6,7 +6,7 @@ interface Props {
 }
 
 function Input(props: Props) {
-    console.log("error", props.error)
+
   return (
     <div className="flex flex-col">
       <label htmlFor="email">{props.title}</label>

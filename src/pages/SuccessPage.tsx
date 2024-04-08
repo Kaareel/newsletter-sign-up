@@ -1,5 +1,5 @@
-import Paragraph from "../Paragraph";
-import Title from "../Title";
+import Paragraph from "../components/Paragraph";
+import Title from "../components/Title";
 
 interface Props {
   email: string;

@@ -1,8 +1,8 @@
-import Title from "../Title";
-import Description from "../Desciption";
-import List from "../List";
-import Input from "../Input";
-import Image from "../Image";
+import Title from "../components/Title";
+import SubscriptionHeader from "../components/SubscriptionHeader";
+import List from "../components/List";
+import Input from "../components/Input";
+import Image from "../components/Image";
 import { Dispatch, SetStateAction } from "react";
 
 
@@ -44,7 +44,7 @@ function StartPage(props: Props) {
               title="Stay updated!"
               className="text-textColor text-[56px] fond-bond"
             />
-            <Description description="Join 60,000+ product managers receiving monthly updates on:" />
+            <SubscriptionHeader title="Join 60,000+ product managers receiving monthly updates on:" />
             <ul className="list-inside grid gap-2">
               <List text="Product discovery and building what matters" />
               <List text="Measuring to ensure updates are a success" />

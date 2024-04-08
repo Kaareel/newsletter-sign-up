@@ -12,16 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  font-family: robotoCustom, sans-serif;
-}
-p {
-  font-family: robotoCustom, sans-serif;
-}
-li {
-  font-family: robotoCustom, sans-serif;
-}
-form {
+h1, p, li, form {
   font-family: robotoCustom, sans-serif;
 }
 

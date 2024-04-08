@@ -1,5 +1,5 @@
-import StartPage from "./components/page/StartPage";
-import SuccessPage from "./components/page/SuccessPage";
+import StartPage from "./pages/StartPage";
+import SuccessPage from "./pages/SuccessPage";
 import Footer from "./components/Footer";
 import { useState } from "react";
 
@@ -44,14 +44,12 @@ function App() {
     <div>
       {view === "start" && <StartPage  validate={validate} email={email} setEmail={setEmail} error={error} setError={setError}/>}
       {view === "thanks" && <SuccessPage email={email} goBack={goBack}/>}
-      <footer >
           <Footer 
           text="Challenge by "
           link ="Frontend Mentor" 
           space="│" 
           author="Coded by "
           profile="josh76543210"/>
-        </footer>
     </div>
   );
 }

@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      listStyleImage: {
+        checkmark: 'url("/icon-success.svg")',
+      },
       colors: {
         bgColor: "hsl(235, 18%, 26%)", textColor: "hsl(234, 29%, 20%)"
       }

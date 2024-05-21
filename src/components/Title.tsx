@@ -1,9 +1,10 @@
 interface Props {
-    title: string,
+	title: string;
+	className: string;
 }
 
 function Title(props: Props) {
-    return <h1 className="text-textColor text-5xl fond-bond ">{props.title}</h1>
+	return <h1 className={props.className}>{props.title}</h1>;
 }
 
 export default Title;
